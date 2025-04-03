@@ -1,0 +1,108 @@
+#title-animation {
+    background-image: linear-gradient(to right, #6b7280, #374151, #1f2937); /* Gradient from gray-500 to gray-700 to gray-900 */
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3rem; /* Larger font size */
+    font-weight: 700;  /* Make it bold */
+    display: inline-block; /* Important for the animation */
+    animation: textAnimation 5s ease-in-out infinite; /* 5s duration, ease-in-out timing, infinite loop */
+}
+
+@keyframes textAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Custom styles for the headshot image */
+#headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Make it a circle */
+    border: 5px solid #4b5563; /* Add a border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Add a shadow */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#headshot:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.06); /* Glassmorphism effect - more subtle*/
+    border-radius: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    backdrop-filter: blur(12px); /* Slightly stronger blur */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Add a border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for transform and box-shadow */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.06); /* Glassmorphism effect - more subtle*/
+    border-radius: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    backdrop-filter: blur(12px); /* Slightly stronger blur */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Add a border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for transform and box-shadow */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+
+.skill-badge {
+    background-color: rgba(255, 255, 255, 0.08); /* Slightly more transparent */
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem; /* More rounded corners */
+    margin: 0.5rem;
+    display: inline-flex; /* Use inline-flex for better alignment */
+    align-items: center; /* Vertically center the icon and text */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.skill-badge:hover {
+    background-color: rgba(255, 255, 255, 0.15); /* Slightly lighter on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    width: 1.5rem; /* Larger icons */
+    height: 1.5rem;
+    margin-right: 0.75rem; /* Increased margin */
+    color: #e2e8f0; /* Light gray color for icons */
+}
+
+/* Style for the footer */
+footer {
+    background-color: rgba(255, 255, 255, 0.06); /* Glassmorphism effect - more subtle*/
+    padding: 2.5rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+}
+
+footer p {
+    color: #cbd5e0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #f9fafb;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
